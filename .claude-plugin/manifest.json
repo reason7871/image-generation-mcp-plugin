@@ -7,7 +7,7 @@
     "name": "OpenWolf"
   },
   "license": "MIT",
-  "homepage": "https://github.com/your-repo/image-generation-mcp-plugin",
+  "homepage": "https://github.com/reason7871/image-generation-mcp-plugin",
   "mcpServers": {
     "image-generation": {
       "command": "node",
