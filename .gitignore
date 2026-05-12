@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Compiled output
+dist/
+
+# Environment files (may contain API keys)
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp

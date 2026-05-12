@@ -1,0 +1,18 @@
+{
+  "name": "image-generation-mcp",
+  "source": {
+    "source": "directory",
+    "path": "E:/CLAUDE_itme/image-generation-mcp-plugin"
+  },
+  "plugins": [
+    {
+      "name": "image-generation-mcp",
+      "description": "多平台 AI 生图工具 - 支持 StepFun 和通义万相（DashScope），提供模型选择菜单和确认流程",
+      "version": "2.0.0",
+      "source": {
+        "source": "directory",
+        "path": "."
+      }
+    }
+  ]
+}

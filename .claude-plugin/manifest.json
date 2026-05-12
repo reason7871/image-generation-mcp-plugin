@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "image-generation-mcp",
+  "version": "2.0.0",
+  "description": "多平台 AI 生图工具 - 支持 StepFun 和通义万相（DashScope）",
+  "author": {
+    "name": "OpenWolf"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/your-repo/image-generation-mcp-plugin",
+  "mcpServers": {
+    "image-generation": {
+      "command": "node",
+      "args": ["./dist/index.js"],
+      "env": {}
+    }
+  },
+  "pluginConfigs": {
+    "image-generation-mcp": {
+      "mcpServers": {
+        "image-generation": {
+          "STEPFUN_API_KEY": "${config:stepfunApiKey}",
+          "DASHSCOPE_API_KEY": "${config:dashscopeApiKey}"
+        }
+      }
+    }
+  },
+  "userConfig": {
+    "stepfunApiKey": {
+      "type": "string",
+      "title": "StepFun API Key",
+      "description": "StepFun 图像生成 API 密钥",
+      "sensitive": true
+    },
+    "dashscopeApiKey": {
+      "type": "string",
+      "title": "DashScope API Key",
+      "description": "阿里云通义万相（DashScope）API 密钥",
+      "sensitive": true
+    }
+  },
+  "skills": [
+    {
+      "name": "生图助手",
+      "description": "使用 AI 生成图片，支持多种模型选择",
+      "trigger": "/generate-image"
+    }
+  ]
+}
