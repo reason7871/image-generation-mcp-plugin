@@ -22,7 +22,7 @@
 
 ```bash
 # 方法 1: 使用 claude plugin add 命令
-claude plugin add https://github.com/YOUR_USERNAME/image-generation-mcp-plugin
+claude plugin add https://github.com/reason7871/image-generation-mcp-plugin
 
 # 方法 2: 手动添加到 ~/.claude/settings.json
 {
@@ -30,7 +30,7 @@ claude plugin add https://github.com/YOUR_USERNAME/image-generation-mcp-plugin
     "image-generation-mcp": {
       "source": {
         "source": "github",
-        "repo": "YOUR_USERNAME/image-generation-mcp-plugin"
+        "repo": "reason7871/image-generation-mcp-plugin"
       }
     }
   },
@@ -77,7 +77,7 @@ Claude 会先让你选择模型，确认后再生成。
 
 1. 克隆仓库：
    ```bash
-   git clone https://github.com/YOUR_USERNAME/image-generation-mcp-plugin.git
+   git clone https://github.com/reason7871/image-generation-mcp-plugin.git
    cd image-generation-mcp-plugin
    ```
 
