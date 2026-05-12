@@ -2,7 +2,7 @@
   "name": "image-generation-mcp",
   "source": {
     "source": "directory",
-    "path": "E:/CLAUDE_itme/image-generation-mcp-plugin"
+    "path": "."
   },
   "plugins": [
     {

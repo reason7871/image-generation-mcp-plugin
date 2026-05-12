@@ -9,11 +9,13 @@
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
-import { join } from 'node:path'
+import { join, dirname } from 'node:path'
 import { homedir } from 'node:os'
+import { fileURLToPath } from 'node:url'
 
+const __dirname = dirname(fileURLToPath(import.meta.url))
 const USER_SETTINGS_PATH = join(homedir(), '.claude', 'settings.json')
-const PLUGIN_PATH = 'E:/CLAUDE_itme/image-generation-mcp-plugin'
+const PLUGIN_PATH = join(__dirname, '.claude-plugin')
 const MARKETPLACE_NAME = 'image-generation-mcp'
 
 console.log('🔧 Image Generation MCP Plugin 安装程序\n')
